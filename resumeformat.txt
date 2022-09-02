@@ -1,0 +1,285 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Your Name} \\ \vspace{1pt}
+    \begin{tikzpicture}
+    \node[scale=1] {\faIcon{map-marker-alt}\href{www.yourlocation.com}{ City,Country}};
+    \end{tikzpicture} \\ \vspace{-2pt}
+    \small \href{tel:Xyz}{ \raisebox{-0.1\height}\faPhone\ {+XY-ContactNo.} ~} \href{mailto:example@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  {Example@gmail.com}} ~ 
+    \href{https://www.linkedin.com}{\raisebox{-0.2\height}\faLinkedinSquare\ {LinkedIn}}  ~
+    \href{www.github.com}{\raisebox{-0.2\height}\faGithub\ {Github}} ~
+    
+    
+     \begin{tikzpicture}
+    \node[scale=1] {\faIcon{link}\href{www.myportfolio.com}{ My\_Portfolio}};
+    \end{tikzpicture}
+    \vspace{1pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{\color{Maroon}{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {College, City}{Aug 20XX -- June 20XX}
+      {Degree}{City, Country}
+      \vspace{-5pt}
+      
+      {(Department)}
+      \vspace{-5pt}
+      
+      \textbf{Percentage: \%}
+      
+  \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {School, City}{April 20XX -- June 20XX}
+      {Class XII, Board}{City, Country}
+      \vspace{-5pt}
+      
+      \textbf{Percentage: \%}
+      
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {School, City}{April 20XX -- June 20XX}
+      {Class X, Board}{City, Country}
+      \vspace{-5pt}
+      
+      \textbf{CGPA: }
+      
+  \resumeSubHeadingListEnd
+  
+  %-----------EXPERIENCE-----------
+\section{\color{Maroon}{EXPERIENCE}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Company Name 1}{Aug 20XX -- June 20XX}
+      {Designation/Post}{City, Country}
+      \vspace{-5pt}
+      
+      {(Your Contribution)}
+      \vspace{-5pt}
+      
+ 
+      
+  \resumeSubHeadingListEnd
+\resumeSubheading
+      {Company Name 2}{Aug 20XX -- June 20XX}
+      {Designation/Post}{City, Country}
+      \vspace{-1pt}
+      
+      {(Your Contribution)}
+      \vspace{-3pt}
+      
+ 
+      
+  \resumeSubHeadingListEnd
+
+
+
+%------RELEVANT COURSEWORK-------
+\section{\color{Maroon}{TECHNICAL SKILLS}}
+    %\resumeSubHeadingListStart
+        
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item\textbf{Programming Language(S):} Languages
+                \item\textbf{Also Familiar With:} Familiar languages and Technologies
+                \item\textbf{DataBase Languages:} Your Choice
+                \item\textbf{Developer Tools:} You familiar with like VS code
+                \item\textbf{IT Construct:} For Example Data Structures \& Algorithms
+               
+            \end{itemize}
+       
+        \vspace*{\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{\color{Maroon}{PROJECTS}}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\href{www.mentionyourlinkhere.com}{\textbf{\large{\underline{Project Name 1}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{(langugae used)}}}{SEP 20XX(Duration)}
+          \vspace{-10pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Description 1}}
+             \resumeItem{\normalsize{Description 2}}
+%--to use more bullet points use "\resumeItem{\normalsize{Description 2}}
+          \resumeItemListEnd
+          \vspace{-10pt}
+          
+          \resumeProjectHeading
+          {\href{www.mentionyourlinkhere.com}{\textbf{\large{\underline{Project Name 1}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{(langugae used)}}}{SEP 20XX(Duration)}
+          \vspace{-10pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Description 1}}
+             \resumeItem{\normalsize{Description 2}}
+%--to use more bullet points use "\resumeItem{\normalsize{Description 2}}
+          \resumeItemListEnd
+         
+\vspace{0pt}
+
+%
+
+
+ %-----------CERTIFICATIONS---------------
+\section{\color{Maroon}{CERTIFICATIONS \& ACHIEVEMENTS}}
+
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item\textbf{\href{www.yourcertificatelink.com}{CERTIFICATE or ACHIEVEMENT NAME 1 \faExternalLink}}
+               \vspace{+5pt} 
+               \item\textbf{\href{www.yourcertificatelink.com}{CERTIFICATE  NAME 2 \faExternalLink}}
+               \vspace{+5pt}   
+                
+               
+            \end{itemize}
+       
+        \vspace*{2.0\multicolsep}
+
+
+\end{document}
